@@ -11,7 +11,7 @@ button{
     margin-top: 600px;
 }
 
-.heading{
+.mheading{
     position: absolute;
     margin-left:28%;
     margin-top: 280px;
@@ -28,8 +28,86 @@ button{
 /*Showreel section starts here*/
 
 .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 400px;
     height: 200px;
-    background-color: red;
     margin-left: 35%;
+    margin-top: auto;
+}
+
+.heading h1{
+    color:red;
+}
+
+.par{
+    margin-bottom: 30px;
+    margin-left: 13%;
+    margin-top: 0px;
+    width: 70%;
+ 
+    height: 100px;
+
+    p{
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+.tras{
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+}
+
+.thevid{
+    width: 800px;
+    height: 500px;
+    background-color: black;
+}
+
+.thepic{
+    margin-top: 160px;
+    width: 600px;
+    height: 400px;
+    background-color: black;
+    z-index: 10;
+}
+
+.pas{
+    margin-bottom: 30px;
+    margin-left: 1%;
+    margin-top: 110px;
+    width: 70%;
+ 
+    height: 100px;
+
+    p{
+        text-align: center;
+        font-size: 18px;
+        color: white;
+    }
+}
+
+.backs{
+    width: 100%;
+    background-color: bisque;
+    height: 750px;
+}
+
+.division{
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: brown;
+    height: 600px;
+    margin-top: -200px;
+    z-index: 5;
 }
