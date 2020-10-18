@@ -1,0 +1,35 @@
+body{
+    background-color: aquamarine; 
+    width: auto;
+    margin: auto;
+    padding: 5px 15px 5px 15px;
+}
+
+button{
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 600px;
+}
+
+.heading{
+    position: absolute;
+    margin-left:28%;
+    margin-top: 280px;
+    font-size: 48px;
+    color: white;
+}
+
+.video{
+    width: 100%;
+    background-color: cadetblue;
+    height: 750px;
+}
+
+/*Showreel section starts here*/
+
+.heading{
+    width: 400px;
+    height: 200px;
+    background-color: red;
+    margin-left: 35%;
+}
