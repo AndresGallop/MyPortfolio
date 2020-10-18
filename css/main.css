@@ -1,0 +1,20 @@
+body{
+    background-color: aquamarine; 
+    width: auto;
+    margin: auto;
+    padding: 5px 15px 5px 15px;
+}
+
+.menu{
+    display: inline-block;
+    width: 100%;
+    background-color: chocolate;
+}
+
+.logo{
+
+}
+
+ul li{
+    display: inline;
+}
