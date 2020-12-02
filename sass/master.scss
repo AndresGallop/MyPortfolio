@@ -1,11 +1,16 @@
-@import 'modules/_vars.scss';
+//Styles for INDEX page
+@import 'modules/index/_gallery.scss';
 
-@import 'modules/_menubar.scss';
-@import 'modules/_gallery.scss';
+//Styles for ABOUT page
+@import 'modules/about/_me.scss';
+@import 'modules/about/_blackhder.scss';
+//Styles for CONTACT page
+@import 'modules/contact/_style.scss';
 
-// mixins go here
-//@import 'modules/_mixins.scss';
+//Styles for DEMOREEL page
 
-// main rules go here
+//General Styles
+@import 'modules/_header.scss';
 @import 'modules/_main.scss';
 @import 'modules/_footer.scss';
+@import 'modules/_vars.scss';

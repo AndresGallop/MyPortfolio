@@ -1,0 +1,72 @@
+.whiteup{
+    //position: absolute;
+    //top: auto;
+    width: 100%;
+    height: 400px;
+    background-color:white;
+    z-index: -5;
+}
+
+.blackspot{
+    width: 100%;
+    height: 650px;
+    background-color: #111327;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //position: relative;
+
+    p{
+        width: 70%;
+        text-align: justify;
+        font-size: 20px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 5%;
+        line-height: 1.4;
+    }
+}
+
+.myface{
+    display: flex;
+    position: absolute;
+    //flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 25%;
+    //background-color: deeppink;
+    left: 0; 
+    right: 4%; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.foto{
+    width: 445px;
+    height: 350px;
+    background-image: url("../images/guaca.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#abouti{
+    transform: rotate(-90deg);
+    //background-color: deepskyblue;
+    color: #111327;
+    align-self: flex-start;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    padding-bottom: 0;
+   padding-right: 0vmin;
+   padding-top: 8vmin;
+
+}
+
+#me{
+    transform: rotate(90deg);
+    //background-color: deepskyblue;
+    color: white;
+    align-self: flex-end;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
