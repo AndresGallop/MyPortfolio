@@ -4,43 +4,67 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/master.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Andres Gallo</title>
 </head>
 <body>
 
-<div class="backs">
-    <div class="menu">
-        <div class="logo"></div>
-            <ul>
-                <li><a href="index.html">Work</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
+    <div class="whiteups"> 
+        <header>
+            <img class="logo" src="images/AGB.svg" alt="logoimage">
+            <nav class="nava">
+                <ul class="linko">
+                    <li id="words"><a id="pala" href="index.html">Work</a></li>
+                    <li id="words"><a id="pala" href="about.html">About</a></li>
+                    <li id="words"><a id="pala" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- <a class="contact" href="#"><button>Contact</button></a> -->
+        </header>
     </div>
 
+    <section class="communi">
+        <h1 id="titledes">Design is also communication</h1>
+        <div class="parrafo">
+            <p>Add value to society is what I am here for.</p>
+            <p>Talk to me and let´s create what´s on your mind.</p>
+            <p>Feel free to contact me for collaborations and freelance projects.</p></div>
 
-    <div class="tras">
-    <div class="thepic"></div>
-</div>
-
-<div class="division">
-<div class="pas">
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-        Itaque consequuntur in dolorum iste sed ipsum architecto 
-        accusantium quaerat inventore ut qui suscipit quidem eveniet, 
-        perferendis, ipsam beatae id, fuga a?Consectetur obcaecati explicabo 
-        libero veniam molestiae nemo inventore aliquam. Aut, nihil tempore. 
-        Nihil, dolorum! Aliquam iusto impedit iure a voluptatibus laboriosam 
-        voluptates tempora veritatis minus, non accusantium, neque necessitatibus vitae!</p>
-    </div>
-
-</div>
-
+            <form action="./includes/mail/send.php" method="POST" id="mail-form">
+                <!-- <label for="firstname">First Name</label> -->
+                <input type="text" id="firstname" name="firstname" placeholder="first name" required>
+                <!-- <span class="error">* <? php echo $error;?></span> -->
     
-<div class="footer">
-<div class="close">Andres Gallo 2020 - Motion Designer</div>
-</div>
+                <!-- <label for="lastname">Last Name</label> -->
+                <input type="text" id="lastname" name="lastname" placeholder="last name" required>
     
-</body>
-</html>
+                <!-- <label for="email">Email</label> -->
+                <input type="email" id="email" name="email" placeholder="email" required>
+    
+                <!-- <label for="message">Your Message</label> -->
+                <textarea name="message" placeholder="last name" id="message" cols="30" rows="6"></textarea>
+    
+                <!-- <label for="Topic" id="topic">Topic</label> --> 
+                <select name="Topics" id="drop">
+                    <option value="">--Select Topic--</option>
+                    <option value="Freelance">Freelance Project</option>
+                    <option value="Company">Company Contract</option>
+                </select>
+    
+                <div class="g-recaptcha" data-sitekey="6LdV5fIZAAAAAHZt6MZouLtumrqx4E7qlt438-Ig"></div>
+    
+                <div class="submit-wrapper">
+                    <span class="submit">Submit</span>
+                    <i class="fas fa-paper-plane"></i>
+                </div>
+            </form>
+
+    </section>
+    <div class="footers">
+        <p class="close">Andres Gallo 2020 - Motion Designer</p>
+        </div>
+
+    </body>
+    </html>
