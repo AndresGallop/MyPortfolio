@@ -7,9 +7,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <title>Andres Gallo</title>
 </head>
 <body>
+
+<main id="app">
 
 <div class="video">
 
@@ -27,7 +30,7 @@
 
     <h1 class="mheading">Motion designer and illustrator</h1>
 
-    <video autoplay loop muted class="elvideo" poster="video.jpg">
+    <video autoplay loop muted class="elvideo" poster="#">
       <source src="video/stadium.mp4" type="video/webm">
 
     </video>
@@ -35,10 +38,20 @@
     <Button class="showreel">Show<span class="reell">reel</span></Button> 
 </div>
 
+
+<section class="lightbox">
+  <span class="close">x</span>
+  <h2 class="namecar">Here Name</h2>
+  <h3 class="thecompany">Company Here</h3>
+  <img class="imagen" src="" alt="">
+  <p class="descricar">Here Description</p>
+</section>
+
+
 <div class="gallery">
 
 <ul class="usa">
-  <li class="lis">
+  <!-- <li class="lis">
     <a href="#">
       <img class="pieze" src="images/arbol.jpg" alt="">
     </a>
@@ -60,14 +73,19 @@
   </a></li>
   <li class="lis"><a href="#">
     <img class="pieze" src="images/example.png" alt="">
-  </a></li>
+  </a></li> -->
   
+  <design-projects v-for="proy in MyWorks" :proy="proy" :key="proy.id"></mini-autos>
+
 </ul>
 </div>
 
 <div class="footer">
-<p class="close">Andres Gallo 2020 - Motion Designer</p>
+<p class="closer">Andres Gallo 2020 - Motion Designer</p>
 </div>
+</main>
+
+<script type="module" src="js/main.js"></script>
     
 </body>
 </html>
