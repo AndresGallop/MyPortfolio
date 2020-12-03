@@ -12,4 +12,4 @@ October 18.
 
 Second and Final Delivery:
 
-December 2.
+December 6.
