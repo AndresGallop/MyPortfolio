@@ -18,7 +18,7 @@ export default {
     template: 
     
     `<li @click="logClicked" v-bind:class="lis">
-    <a href="#">
+    <a>
       <img v-bind:class="pieze" :src="'images/' + proy.image" :alt='proy.name + "image"'>
     </a>
   </li>`,

@@ -6,7 +6,7 @@
     display: flex; 
     align-items: center;
     justify-content: center;
-    z-index: 5000;
+    z-index: 888000;
     position: absolute;
     position: fixed;
    // background-color: rgba(0, 0, 0, 0.8);
@@ -17,17 +17,17 @@
 .lightbox{
    width: 100%;
    height: 100vh;
-   background-color: rgba(48, 44, 44, 0.95);
+   background-color: #111327f5;
    display: grid;
    display: none;
 
 
-   grid-template-columns: 1.5fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: 1fr 1fr;
    grid-gap: 5px;
    grid-template-areas: 
-             " imagen nombre"
-             " imagen descri";
+             " nombre imagen descrip"
+             " nombre imagen descrip";
              
 }
 
@@ -42,7 +42,9 @@ display: grid;}
     height: 30px;
     top: 0;
     align-self: flex-start;
-    grid-area: nombre;
+    grid-area: descrip;
+    justify-self: center;
+    align-self: start;
     color: seashell;
     background-color: rgba(48, 44, 44, 0);
     justify-self: end;
@@ -52,28 +54,29 @@ display: grid;}
 }
 
 .namecar{
-    color: lightyellow;
+    color: white;
     background-color: rgba(0, 0, 0, 0);
     grid-area: nombre;
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Poppins', sans-serif;
-    width: 80%;
+    width: 60%;
     height: auto;
     justify-self: center;
-    align-self: end;
+    align-self: center;
     padding-bottom: 50px;
 }
 
-.thecompay{
-    color: lightyellow;
+.thecompany{
+    color:  #EA148F;
     background-color: rgba(0, 0, 0, 0);
     grid-area: nombre;
-    font-size: 50px;
+    font-size: 15px;
+    padding-top: 30%;
     font-family: 'Poppins', sans-serif;
-    width: 80%;
+    width: 60%;
     height: auto;
     justify-self: center;
-    align-self: end;
+    align-self: center;
     padding-bottom: 50px;
 }
 
@@ -84,25 +87,33 @@ display: grid;}
     background-color: rgba(0, 255, 255, 0);
     //background-color: red;
     grid-area: imagen;
+    justify-self: center;
+    align-self: center;
     object-fit: contain;
     overflow: hidden;
+    border: white solid 1px;
 }
 
 .descricar{
-    width: 80%;
+    width: 60%;
     height: 25%;
-    color: lightyellow;
-    grid-area: descri;
+    color: white;
+    grid-area: descrip;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     height: auto;
     justify-self: center;
-    align-self: start;
+    align-self: center;
     padding-bottom: 50px;
     background-color: rgba(0, 0, 0, 0);
+    line-height: 35px;
 }
 
 
 .close{
     cursor: pointer;
+}
+
+.close:hover{
+    color: #47A0E6;
 }
