@@ -1,5 +1,6 @@
 import { fetchData } from "./components/DataMiner.js";
 import Pieces from "./components/Projects.js";
+import { SendMail } from "./components/mailer.js";
 
 (() => {
 
@@ -21,7 +22,10 @@ import Pieces from "./components/Projects.js";
             console.log("Vue is mounted, trying a fetch for the initial data");
             
             fetchData("./includes/index.php")
-                .then(data => {data.forEach(proy => this.MyWorks.push(proy));}).catch(err => console.error(err));
+                .then(data => {
+                    data.forEach(proy => this.MyWorks.push(proy));
+                })
+                .catch(err => console.error(err));
                         
         },
 
@@ -61,11 +65,14 @@ import Pieces from "./components/Projects.js";
                 // make the selected prof's data visible
                 // this.professors.splice(this.professors.indexOf(target), 1);
                 this.$delete(this.MyWorks, target);
-            }
+            },
+
+            
         },
 
         components: {
             "design-projects": Pieces
         }
-    }).$mount("#app"); // also connects Vue to your wrapper in HTML
+    }).$mount("#app", "#api"); // also connects Vue to your wrapper in HTML
+    //$mount("#api");
 })();
