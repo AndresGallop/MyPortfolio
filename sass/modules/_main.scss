@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #111327;
+   background-color: #111327;
 }
 
 .reell{
@@ -63,14 +63,22 @@ body{
     margin-top: 45vh;
     font-size: 48px;
     color: white;
-    z-index: 1500;
+    z-index: 400000 !important;
 }
 
 .video{
     width: 100%;
-    background-color: rgba(255, 0, 0, 0);
+//     background-color: rgba(255, 0, 0, 0);
     height: 750px;
-   overflow: hidden;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1000;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+2,000000+100&0+0,1+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.02) 2%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.02) 2%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.02) 2%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
 }
 
 .elvideo{
@@ -82,7 +90,105 @@ body{
     min-height: 100%;
     transform: translateX(0%) translateY(0%);
     opacity: 0.2;
-    z-index: -1;
+    //z-index: -1;
+
+
+}
+
+.divisionga{
+    margin-top: 350px;
+    position: absolute;
+    //padding-right: 00px;
+    display: flex;
+    position: fixed;
+   // overflow: hidden;
+    margin-left: 54.5%;
+    margin-right: auto;
+    //justify-content: start;
+    //align-items: center;
+    width: 45vw;
+    height: 180vh;
+    //background-color: rgba(255, 255, 255, 0.507);
+    background-image: url(../images/flower.png);
+    background-size: cover;
+    //background-color: yellow;
+    background-repeat: no-repeat;
+    //background-position: 80% -10% 25%;
+    transform: rotate(0deg);
+    z-index: 30000;
+    opacity: 0.9;
+
+}
+
+.divisiongas{
+    margin-top: 200px;
+    
+    position: absolute;
+    //padding-right: 00px;
+    display: flex;
+   // overflow: hidden;
+    margin-left: 54.5%;
+    margin-right: auto;
+    //justify-content: start;
+    //align-items: center;
+    width: 45vw;
+    height: 180vh;
+    //background-color: rgba(255, 255, 255, 0.507);
+    background-image: url(../images/flower.png);
+    background-size: cover;
+    //background-color: yellow;
+    background-repeat: no-repeat;
+    //background-position: 80% -10% 25%;
+    transform: rotate(0deg);
+    z-index: 30000;
+    opacity: 0.9;
+
+}
+
+.divisiongo{
+    margin-top: 350px;
+    position: absolute;
+    position: fixed;
+    //padding-right: 00px;
+    display: flex;
+    overflow: hidden;
+    margin-right: 80%;
+    //justify-content: start;
+    //align-items: center;
+    width: 45vw;
+    height: 180vh;
+    //background-color: rgba(255, 255, 255, 0.507);
+    background-image: url(../images/blue.png);
+    background-size: cover;
+    //background-color: yellow;
+    background-repeat: no-repeat;
+   // background-position: 0% -10% 25%;
+    transform: rotate(180deg);
+    z-index: 30000;
+    opacity: 0.9;
+
+}
+
+.divisiongos{
+    margin-top: 200px;
+    position: absolute;
+    //padding-right: 00px;
+    display: flex;
+    overflow: hidden;
+    margin-right: 80%;
+    //justify-content: start;
+    //align-items: center;
+    width: 45vw;
+    height: 180vh;
+    //background-color: rgba(255, 255, 255, 0.507);
+    background-image: url(../images/flower.png);
+    background-size: cover;
+    //background-color: yellow;
+    background-repeat: no-repeat;
+   // background-position: 0% -10% 25%;
+    transform: rotate(180deg);
+    z-index: 30000;
+    opacity: 0.9;
 
 }
 

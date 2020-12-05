@@ -42,6 +42,7 @@
     flex-grow: 1;
     margin: 2vmin;
     list-style: none;
+    z-index: 50000;
   }
   
 //   .lis:last-child {
@@ -56,6 +57,10 @@
     vertical-align: bottom;
     border-radius: 1vmin;
     
+  }
+
+  .gallery{
+    padding-top: 750px;
   }
 
 

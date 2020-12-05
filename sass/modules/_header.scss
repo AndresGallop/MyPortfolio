@@ -5,7 +5,7 @@ header{
     padding: 30px 3%;
     background-color: rgba(0, 0, 0, 0);
     //background-color: red;
-    //z-index: 100;
+    
     
 }
 
@@ -29,6 +29,7 @@ header{
 
 .links{
     list-style: none;
+    z-index: 999999;
 
     
     li{
@@ -47,6 +48,7 @@ header{
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    z-index:400000 !important;
     }
 
     a:hover{

@@ -14,29 +14,41 @@
 
 <main id="app">
 
+  <header>
+    <img class="logo" src="images/AG.svg" alt="logoimage">
+    <nav class="nava">
+        <ul class="links">
+            <li class="words"><a class="pala" href="index.html">Work</a></li>
+            <li class="words"><a class="pala" href="about.html">About</a></li>
+            <li class="words"><a class="pala" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- <a class="contact" href="#"><button>Contact</button></a> -->
+</header>
+
 <div class="video">
 
-    <header>
-        <img class="logo" src="images/AG.svg" alt="logoimage">
-        <nav class="nava">
-            <ul class="links">
-                <li class="words"><a class="pala" href="index.html">Work</a></li>
-                <li class="words"><a class="pala" href="about.html">About</a></li>
-                <li class="words"><a class="pala" href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <!-- <a class="contact" href="#"><button>Contact</button></a> -->
-    </header>
+    
 
-    <h1 class="mheading">Motion designer and illustrator</h1>
+    
 
     <video autoplay loop muted class="elvideo" poster="#">
-      <source src="video/stadium.mp4" type="video/webm">
+      <source  type="video/webm">
 
     </video>
 
-    <Button class="showreel">Show<span class="reell">reel</span></Button> 
+    <!-- <Button class="showreel">Show<span class="reell">reel</span></Button>  -->
 </div>
+
+<Button class="showreel">Show<span class="reell">reel</span></Button>
+
+<h1 class="mheading">Motion designer and illustrator</h1>
+
+<div class="divisionga"></div>
+<!-- <div class="divisiongas"></div> -->
+
+<div class="divisiongo"></div>
+<!-- <div class="divisiongos"></div> -->
 
 
 <section class="lightbox">
@@ -70,12 +82,12 @@
   </a></li>
   <li class="lis"><a href="#">
     <img class="pieze" src="images/arena.jpg" alt="">
-  </a></li>
+  </a></li> 
   <li class="lis"><a href="#">
     <img class="pieze" src="images/example.png" alt="">
   </a></li> -->
   
-  <design-projects v-for="proy in MyWorks" :proy="proy" :key="proy.id"></mini-autos>
+  <design-projects v-for="proy in MyWorks" :proy="proy" :key="proy.id"></design-projects>
 
 </ul>
 </div>
