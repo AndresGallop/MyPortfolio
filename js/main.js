@@ -1,6 +1,5 @@
 import { fetchData } from "./components/DataMiner.js";
 import Pieces from "./components/Projects.js";
-import { SendMail } from "./components/mailer.js";
 
 (() => {
 
@@ -10,10 +9,10 @@ import { SendMail } from "./components/mailer.js";
 
         data: {
             message: "Hello from Vue!",
-            anotherMessage: "more text, so simple! much winning",
+            anotherMessage: "More text, so simple! much winning",
             removeAformat: true,
             showBioData: false,
-            MyWorks: [],
+            myworks: [],
             currentProject: {}
         },
 
@@ -23,15 +22,16 @@ import { SendMail } from "./components/mailer.js";
             
             fetchData("./includes/index.php")
                 .then(data => {
-                    data.forEach(proy => this.MyWorks.push(proy));
+                    data.forEach(proy => this.myworks.push(proy));
                 })
                 .catch(err => console.error(err));
-                        
+                
+                
         },
 
         // run a method when we change our view (update the DOM with Vue)
         updated: function() {
-            console.log('Vue just updated the DOM');
+            console.log("Vue just updated the DOM");
         },
 
         methods: {   //LOS METHODS SON COMO FUNCIONES SEGUN ENTIENDO
@@ -64,15 +64,13 @@ import { SendMail } from "./components/mailer.js";
 
                 // make the selected prof's data visible
                 // this.professors.splice(this.professors.indexOf(target), 1);
-                this.$delete(this.MyWorks, target);
-            },
-
-            
+                this.$delete(this.myworks, target);
+            }
         },
 
         components: {
             "design-projects": Pieces
         }
-    }).$mount("#app", "#api"); // also connects Vue to your wrapper in HTML
+    }).$mount("#app"); // also connects Vue to your wrapper in HTML
     //$mount("#api");
 })();

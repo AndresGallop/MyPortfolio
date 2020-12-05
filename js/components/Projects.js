@@ -24,7 +24,7 @@ export default {
   </li>`,
 
     created: function () {
-        console.log(`created ${this.proy.name}'s piece`);
+        console.log(`created ${this.proy.name}'s piece`); 
     }
     ,
 
