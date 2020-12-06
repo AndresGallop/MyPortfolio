@@ -1,0 +1,77 @@
+@media screen and (max-width: 768px) {
+
+  .links{
+    list-style: none;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    //background-color: royalblue;
+
+    
+    li{
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+    a{
+
+    color:white;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 2px 12px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    z-index:400000 !important;
+    }
+
+    a:hover{
+        background-color: #47A0E6;
+    }
+}
+
+
+
+#hamenu {margin-bottom: 0px;}
+
+#hamenu {
+  background: url(../images/hambur.png) no-repeat;
+    background-size: contain;
+    //background-color: brown;
+  border: 0px;
+	margin: 20px;
+  width: 40px;
+  height: 40px;
+  transition: all 400ms ease;
+	margin-top: 20px;
+	align-self: flex-start;
+}
+
+#hamenu.expanded {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+	background-image: url(../images/x.png);
+
+  transform: rotate(90deg);
+}
+
+#burgerCon { display: none; margin-top: 20px; }
+#burgerCon.slideToggle {display: block;}
+
+}
+
+// .hamenu{
+//     display: none !important;
+// }
+
+
+@media screen and (min-width: 769px) {
+
+    .button-wrapper{
+        display: none;
+        
+    }
+
+}

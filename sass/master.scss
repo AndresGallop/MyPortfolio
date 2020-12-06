@@ -1,5 +1,6 @@
 //Styles for INDEX page
 @import 'modules/index/_gallery.scss';
+@import 'modules/_hamburgermenu.scss';
 
 //Styles for ABOUT page
 @import 'modules/about/_me.scss';
@@ -8,6 +9,7 @@
 @import 'modules/contact/_style.scss';
 
 //Styles for DEMOREEL page
+@import 'modules/showreel/_stilo.scss';
 
 //General Styles
 @import 'modules/_header.scss';

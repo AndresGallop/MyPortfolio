@@ -23,13 +23,24 @@ header{
 .logo{
     cursor: pointer;
     width: 125px;
-
-    
 }
+
+.blacki{
+    color: black !important;
+}
+
+.blacki:hover {
+    color: white !important;
+}
+
+// .contacti{
+    
+// }
 
 .links{
     list-style: none;
     z-index: 999999;
+    //background-color: royalblue;
 
     
     li{

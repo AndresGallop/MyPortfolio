@@ -78,6 +78,7 @@ display: grid;}
     justify-self: center;
     align-self: center;
     padding-bottom: 50px;
+    //padding-top: 0%;
 }
 
 .imagen{
@@ -91,7 +92,7 @@ display: grid;}
     align-self: center;
     object-fit: contain;
     overflow: hidden;
-    border: white solid 1px;
+    //border: white solid 1px;
 }
 
 .descricar{
@@ -108,6 +109,65 @@ display: grid;}
     background-color: rgba(0, 0, 0, 0);
     line-height: 35px;
 }
+
+@media screen and (max-width: 1080px) {
+    .mheading{
+        //color: blue;
+        font-size: 55px;
+        margin-left: 0%;
+        padding-left: 10%;
+}
+}
+
+@media screen and (max-width: 1023px) {
+    .thecompany{
+
+        padding-top: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lightbox{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 5px;
+        grid-template-areas: 
+                  " nombre"
+                  " imagen"
+                  "descrip";
+                  
+     }
+     //
+     
+
+     .close{
+        grid-area: nombre;//
+
+    }
+
+     .thecompany{
+
+        padding-top: 15%;
+    }
+
+     .namecar{
+
+        font-size: 30px;//
+
+    }
+    
+    .imagen{
+
+        height: 100%;//
+    }
+    
+    .descricar{
+
+        font-size: 10px;//
+        line-height: 25px;//
+    }
+}
+
 
 
 .close{
