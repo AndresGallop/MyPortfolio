@@ -1,5 +1,7 @@
 import { fetchData } from "./components/DataMiner.js";
 import Pieces from "./components/Projects.js";
+import ButtonComponent from "./components/Hammenu.js";//
+import formComponent from "./components/contactform.js";//
 
 (() => {
 
@@ -64,12 +66,15 @@ import Pieces from "./components/Projects.js";
 
                 // make the selected prof's data visible
                 // this.professors.splice(this.professors.indexOf(target), 1);
-                this.$delete(this.myworks, target);
+                this.$delete(this.myworks, target); 
             }
         },
 
         components: {
-            "design-projects": Pieces
+            "design-projects": Pieces,
+            "buttoncomponent" : ButtonComponent,
+            "formcomponent" : formComponent
+
         }
     }).$mount("#app"); // also connects Vue to your wrapper in HTML
     //$mount("#api");

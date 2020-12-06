@@ -9,6 +9,9 @@
 
     //This is the DB credentials
 
+    // $db_user = 'andresroot2541';
+    // $db_pass = 'portfolio_1'; // Mac = "root"  Windows = "it goes empty"
+
     $db_user = 'root';
     $db_pass = ''; // Mac = "root"  Windows = "it goes empty"
 
